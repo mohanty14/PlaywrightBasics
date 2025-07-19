@@ -19,5 +19,6 @@ test.only("dropdown check",async({page})=>{
 
  await page.locator('input#usertype').last().click();
  await page .locator('#okayBtn').click();
+ expect(await page.locator('input#usertype').last()).toBeChecked();
  await page.pause();
 })
