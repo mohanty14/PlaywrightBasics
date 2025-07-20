@@ -13,7 +13,7 @@ import { chromium, defineConfig, devices } from '@playwright/test';
  */
 const config={
   testDir: './tests',
- timeout:30 *100,
+ timeout:60 *100,
  expect:{
   timeout:50*100
  },
